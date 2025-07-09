@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+          
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+    
+</head>
+<body>
+
+    <div class="hero">
+        <div class="input">
+        <input type="text" placeholder="Enter your location" id="input-box"> </input>
+        <button id="search">Search</button>
+    </div>
+    <h3 id="location"></h3>
+    <h6 id="local_time"></h6>
+    <div class="info">
+
+        <img src="http://cdn.weatherapi.com/weather/64x64/day/389.png" alt="" id="w_img">
+
+        <div class="temp_info">
+                 <h1 id="temp"></h1>
+       <h4 id="zero"></h4>
+        </div>
+
+    </div>
+
+    
+
+    <div class="data">
+        <ul>
+        <li>
+            <span>Cloud</span>
+                <i class="fa-solid fa-cloud"></i>
+            <span id="cloud"></span>
+        </li>
+        <li>
+            <span>Humidity</span>
+            <i class="fa-solid fa-droplet"></i>
+            <span id="humidity"></span>
+        </li>
+        <li>
+            <span>Pressure</span>
+            <i class="fa-solid fa-gauge"></i>
+            <span id="pressure"></span>
+        </li>
+    </ul>
+    </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

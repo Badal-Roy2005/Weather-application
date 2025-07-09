@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(167, 162, 162, 0.2) 50%
+  );
+}
+
+.hero {
+  width: 330px;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 18px black;
+  overflow: hidden;
+}
+
+.input {
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(239, 233, 233);
+}
+
+.input button {
+  position: absolute;
+  height: 50px;
+  border-radius: 50px;
+  width: 100px;
+  right: 0;
+  outline: none;
+  border: none;
+  background-color: orange;
+  color: white;
+}
+
+.info img {
+  width: 70%;
+  height: fit-content;
+  margin-left: auto;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  margin-left: 40px;
+}
+
+.info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* padding: 15px; */
+}
+
+.temp_info {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.data ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* background: purple; */
+  gap: 10px;
+}
+
+.data ul li {
+  background-color: rgb(233, 128, 48);
+  padding: 20px 10px;
+  border-radius: 10px;
+  color: white;
+  background-image: linear-gradient(to bottom, transparent 50%, #0003 50%);
+  font-weight: bold;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.data li:nth-child(2) {
+  background-color: purple;
+}
+
+.data li:nth-child(3) {
+  background-color: rgb(4, 4, 117);
+}
+.data ul i {
+  font-size: 1.5em;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+}
